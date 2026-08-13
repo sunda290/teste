@@ -98,7 +98,11 @@ gaps:
   - sql_migrations
 
 preferences:
-  target_titles: [Junior Backend Developer, Backend Developer, Node.js Developer]
+  # Alvo revisado: candidato topa RELOCAR para Alberta. Alberta mostrou maior taxa de
+  # acerto junior e mercado mais full-stack, que casa melhor com o portfolio real.
+  target_titles: [Junior Backend Developer, Full Stack Developer, Node.js Developer, Software Developer]
   seniority: junior
-  locations: [Toronto ON, GTA]   # confirmado: Toronto e Grande Toronto (GTA)
-  remote: hybrid                 # confirmado: preferencia hibrida
+  locations: [Calgary AB, Edmonton AB]   # primario (relocacao aceita)
+  locations_fallback: [Toronto ON, GTA]  # secundario, se relocacao nao ocorrer
+  relocation: true                       # confirmado: toparia relocar para Alberta
+  remote: hybrid                         # confirmado: preferencia hibrida
