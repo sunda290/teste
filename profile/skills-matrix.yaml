@@ -1,53 +1,104 @@
-# Matriz de Competencias — ESQUELETO. Preenchimento humano.
+# Matriz de Competencias
 #
-# Base do scoring de technicalMatch (secao 10). Registre competencia REAL, com
-# nivel e evidencia, nao keyword. O nivel deve ser sustentavel pelo master-resume.md.
+# Base do scoring de technicalMatch (secao 10). Competencia REAL, com nivel e
+# evidencia, nao keyword. O nivel deve ser sustentavel pelo master-resume.md.
 #
-# nivel: 1 = exposto  |  2 = aplicado  |  3 = proficiente  |  4 = especialista
+# nivel: 1 = exposto | 2 = aplicado | 3 = proficiente | 4 = especialista
 # years: anos de uso pratico
-# evidence: onde no master-resume isso aparece (empresa, projeto)
+# evidence: onde isso aparece (repositorio publico do candidato, github.com/sunda290)
+#
+# ATENCAO: niveis abaixo foram INFERIDOS dos repositorios publicos (linguagem +
+# descricao), nao medidos. Alvo declarado: Backend, Junior. Reveja e ajuste cada
+# nivel e cada 'years'. Onde voce nao sustenta o nivel numa entrevista, baixe-o.
 
 version: 1
 updated_at: 2026-08-13
+target: { role: Backend, seniority: junior }
+fonte_evidencia: repositorios publicos github.com/sunda290 (inferido, a confirmar)
 
 skills:
   languages:
     - name: TypeScript
-      nivel: 0
-      years: 0
-      evidence: ""
+      nivel: 3          # a_confirmar. Linguagem dominante no portfolio
+      years: 2
+      evidence: "cobranca-whatsapp, alpha-cleaning, aman96-site, kairos, paw-stay, mineinvest, bussola, DoceLucro"
+    - name: JavaScript
+      nivel: 2          # a_confirmar
+      years: 2
+      evidence: "multiplica, movimenta, amei-cosmetics, curso-frances-janete, podcast-grupos"
     - name: Python
-      nivel: 0
-      years: 0
-      evidence: ""
+      nivel: 2          # a_confirmar
+      years: 1
+      evidence: "VetVault, ship123-auto (API Canada Post), zap-juridico (API DataJud)"
 
-  frameworks:
+  backend:
     - name: Node.js
-      nivel: 0
-      years: 0
-      evidence: ""
+      nivel: 2          # a_confirmar. Backend explicito em aman96-site
+      years: 2
+      evidence: "aman96-site (backend Node.js: loja, pedidos, integracoes), cobranca-whatsapp"
+    - name: Next.js (App Router / API routes)
+      nivel: 2          # a_confirmar
+      years: 1
+      evidence: "kairos, paw-stay (Next.js 14), sweet-chen-bakery"
+    - name: Integracao de APIs REST de terceiros
+      nivel: 2          # a_confirmar. Ponto forte pro alvo backend
+      years: 1
+      evidence: "ship123-auto (Canada Post), zap-juridico (DataJud), aman96-site (integracoes)"
+    - name: Bots / webhooks (WhatsApp)
+      nivel: 2          # a_confirmar
+      years: 1
+      evidence: "cobranca-whatsapp, zap-juridico, paw-stay (booking via WhatsApp)"
+    - name: Orquestracao de agentes de IA / LLM
+      nivel: 2          # a_confirmar. Recorrente e diretamente relevante ao JobOps
+      years: 1
+      evidence: "VetVault (vault + agentes), ship123-auto (camada de agentes), mineinvest (IA), kairos (IA)"
 
   data:
+    - name: Firebase / Firestore
+      nivel: 2          # a_confirmar. Banco predominante no portfolio
+      years: 1
+      evidence: "kairos, paw-stay (Firebase)"
     - name: PostgreSQL
-      nivel: 0
+      nivel: 0          # LACUNA. Stack do JobOps exige. Sem evidencia nos repos vistos
       years: 0
-      evidence: ""
+      evidence: ""      # a preencher se houver experiencia; senao, e gap a cobrir na FASE 1
 
-  cloud:
-    - name: ""
-      nivel: 0
-      years: 0
-      evidence: ""
+  frontend:
+    - name: React
+      nivel: 2          # a_confirmar
+      years: 2
+      evidence: "aman96-site (React/Vite), kairos, paw-stay"
+    - name: Tailwind CSS
+      nivel: 2          # a_confirmar
+      years: 1
+      evidence: "paw-stay"
+    - name: HTML / CSS (landing pages)
+      nivel: 3          # a_confirmar
+      years: 3
+      evidence: "pawstay-site, fineedgestudio, sunda290.github.io, bitlegacy, rjvalle"
 
   practices:
-    - name: ""
-      nivel: 0
-      years: 0
-      evidence: ""
+    - name: Git / GitHub
+      nivel: 3          # a_confirmar. 30+ repositorios ao longo de ~3 anos
+      years: 3
+      evidence: "github.com/sunda290 (30+ repos, 2023 a 2026)"
+    - name: Produto solo ponta a ponta (0 a 1)
+      nivel: 3          # a_confirmar. Muitos MVPs proprios de negocio
+      years: 3
+      evidence: "alpha-cleaning, kairos, mineinvest, ship123-auto, sweet-chen-bakery"
 
-# Preferencias que informam seniorityFit e filtros de busca.
+# Lacunas relevantes para a stack do JobOps (Node 22 + Express + PostgreSQL):
+#  - PostgreSQL: sem evidencia. Banco do portfolio e Firebase. Gap a cobrir.
+#  - Express: sem evidencia confirmada (backend visto e Node "cru" / Next.js). Confirmar.
+#  - Testes (Vitest) e SQL explicito / migrations: sem evidencia. Confirmar.
+gaps:
+  - postgresql
+  - express
+  - testes_vitest
+  - sql_migrations
+
 preferences:
-  target_titles: []
-  seniority: ""       # junior | pleno | senior | staff
-  locations: []       # ex.: Hamilton ON, Toronto ON, Remote Canada
-  remote: null        # true | false | null (indiferente)
+  target_titles: [Backend Developer, Backend Engineer, Node.js Developer]
+  seniority: junior
+  locations: [Hamilton ON, Toronto ON, Remote Canada]   # a_confirmar
+  remote: null            # true | false | null (indiferente) — a_confirmar
