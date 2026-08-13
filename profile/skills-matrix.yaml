@@ -59,9 +59,9 @@ skills:
       years: 1
       evidence: "kairos, paw-stay (Firebase)"
     - name: PostgreSQL
-      nivel: 0          # LACUNA. Stack do JobOps exige. Sem evidencia nos repos vistos
+      nivel: 0          # LACUNA CONFIRMADA pelo candidato. Stack do JobOps exige.
       years: 0
-      evidence: ""      # a preencher se houver experiencia; senao, e gap a cobrir na FASE 1
+      evidence: ""      # gap a cobrir na FASE 1 (banco do portfolio e Firebase)
 
   frontend:
     - name: React
@@ -98,7 +98,7 @@ gaps:
   - sql_migrations
 
 preferences:
-  target_titles: [Backend Developer, Backend Engineer, Node.js Developer]
+  target_titles: [Junior Backend Developer, Backend Developer, Node.js Developer]
   seniority: junior
-  locations: [Hamilton ON, Toronto ON, Remote Canada]   # a_confirmar
-  remote: null            # true | false | null (indiferente) — a_confirmar
+  locations: [Toronto ON, GTA]   # confirmado: Toronto e Grande Toronto (GTA)
+  remote: hybrid                 # confirmado: preferencia hibrida
