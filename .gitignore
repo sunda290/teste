@@ -1,0 +1,24 @@
+# Segredos e ambiente
+.env
+.env.local
+
+# Dados pessoais: nao vao para o repositorio, mesmo privado (secao 13, R4/PIPEDA)
+profile/master-resume.md
+
+# Vault Obsidian: memoria do projeto, versionamento proprio (secao 6, secao 13)
+vault/
+
+# Dados coletados e exportacoes
+data/
+*.csv
+
+# Node / build
+node_modules/
+dist/
+*.log
+npm-debug.log*
+
+# SO / editor
+.DS_Store
+.idea/
+.vscode/

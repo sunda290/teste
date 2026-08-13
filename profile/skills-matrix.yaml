@@ -1,0 +1,53 @@
+# Matriz de Competencias — ESQUELETO. Preenchimento humano.
+#
+# Base do scoring de technicalMatch (secao 10). Registre competencia REAL, com
+# nivel e evidencia, nao keyword. O nivel deve ser sustentavel pelo master-resume.md.
+#
+# nivel: 1 = exposto  |  2 = aplicado  |  3 = proficiente  |  4 = especialista
+# years: anos de uso pratico
+# evidence: onde no master-resume isso aparece (empresa, projeto)
+
+version: 1
+updated_at: 2026-08-13
+
+skills:
+  languages:
+    - name: TypeScript
+      nivel: 0
+      years: 0
+      evidence: ""
+    - name: Python
+      nivel: 0
+      years: 0
+      evidence: ""
+
+  frameworks:
+    - name: Node.js
+      nivel: 0
+      years: 0
+      evidence: ""
+
+  data:
+    - name: PostgreSQL
+      nivel: 0
+      years: 0
+      evidence: ""
+
+  cloud:
+    - name: ""
+      nivel: 0
+      years: 0
+      evidence: ""
+
+  practices:
+    - name: ""
+      nivel: 0
+      years: 0
+      evidence: ""
+
+# Preferencias que informam seniorityFit e filtros de busca.
+preferences:
+  target_titles: []
+  seniority: ""       # junior | pleno | senior | staff
+  locations: []       # ex.: Hamilton ON, Toronto ON, Remote Canada
+  remote: null        # true | false | null (indiferente)
