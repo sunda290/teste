@@ -13,9 +13,14 @@
 | Data | Bruto | Unicas | Relevantes (>=50) | Observacao |
 |------|-------|--------|-------------------|------------|
 | 2026-08-13 | 19 | 17 | 5 | Dia 1 (seed manual) |
+| 2026-08-16 | 20 | 19 | 4 | Dia 2 real (Aug 16). Churn alto. Fluxo novo: ~1-2 relevantes em 3 dias |
 
-Media de relevantes/dia: (a calcular a partir de 3+ dias)
+Estoque de relevantes por snapshot: ~4-5 (estavel).
+FLUXO NOVO (o que importa pro GATE 0): entre 13 e 16-ago (3 dias reais), postagens
+novas datadas foram Cold Bore (13-ago) e Raise (14-ago) = 2 vagas, 1 relevante.
+Ou seja, entrada de ~0.3-0.5 relevante/dia. Bem abaixo do criterio de 10/dia.
 Criterio GATE 0: >= 10 vagas relevantes/dia justifica automacao.
+Ressalva: conector Indeed limita ~10 por query; numero real deve ser lido no Indeed.
 
 ## Nota metodologica (2026-08-13)
 
@@ -47,3 +52,26 @@ Relevantes (score >= 50):
 
 Detalhe completo das 17 unicas em `vault/JobOps/40-Metricas/FASE0-resultado-alberta.md`
 (quando rodado interativamente).
+
+---
+
+## 2026-08-16 (dia 2 real)
+
+Coleta: 20 brutas, 19 unicas de dev (removido 1 machinist CNC). Data de hoje: 2026-08-16.
+
+Relevantes (score >= 50):
+
+1. 60 — Intermediate Software Developer — Wiq Technologies — Calgary — 08-12 — https://to.indeed.com/aag94x6trpnk  (NOVA)
+2. 57 — Software Engineer — Cold Bore Technology — Calgary — 08-13 — https://to.indeed.com/aa6sqlmnqjs8  (NOVA)
+3. 57 — Full-Stack Software Developer — AFD Petroleum — Edmonton — 08-12 — https://to.indeed.com/aa8sk7zpcrhh
+4. 50 — Web Developer — CTOMS — Edmonton — 08-05 — https://to.indeed.com/aafdwryrfvhq
+
+Logo abaixo do corte: Raise (Senior SWE Microservice, Calgary, 08-14, ~48, senior).
+
+Entraram vs dia 1: Wiq (60), Cold Bore SWE (57), Raise (48), Metrolinx (~35), Patterson-UTI (~38).
+Sairam vs dia 1: Express Employment (era 62), CardGio (52), THE MAMMOTH (60).
+
+Leitura: o estoque de relevantes fica em ~4-5 por snapshot, mas o FLUXO de vagas
+realmente novas e baixo (~1 relevante a cada 2-3 dias na amostra). Dois dias reais
+apontam para volume bem abaixo dos 10/dia do GATE 0. Confirmar com o total real do
+Indeed antes de decidir.
