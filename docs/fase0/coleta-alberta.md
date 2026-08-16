@@ -75,3 +75,18 @@ Leitura: o estoque de relevantes fica em ~4-5 por snapshot, mas o FLUXO de vagas
 realmente novas e baixo (~1 relevante a cada 2-3 dias na amostra). Dois dias reais
 apontam para volume bem abaixo dos 10/dia do GATE 0. Confirmar com o total real do
 Indeed antes de decidir.
+
+## Evidencia da UI do Indeed (2026-08-16, prints do operador)
+
+Busca "developer" filtrada (Date posted + Job type), Calgary e Edmonton:
+- Muitos falso-positivos no termo "developer": "Job Coach/Business Developer" (vendas),
+  "Intermediate-Senior HVAC Controls" (climatizacao). Nao sao software.
+- Devs reais na tela sao majoritariamente senior ou fora do stack: iOS Engineer (Swift),
+  Senior Power Platform Engineer (low-code), Solution Architect. As do perfil (Cold Bore)
+  ja estavam contadas.
+- DECISIVO: em Edmonton, com filtros, a lista cai em "Similar to jobs you explored" apos
+  poucos resultados = Indeed esgotou os matches reais e passou a preencher com parecidas.
+
+Conclusao: nem a busca filtrada do proprio Indeed enche uma tela de vaga junior relevante.
+Corrobora a amostragem do conector. Criterio de volume do GATE 0 (>=10 relevantes/dia)
+NAO atingido para o recorte "junior backend/full-stack, Alberta", por larga margem.
